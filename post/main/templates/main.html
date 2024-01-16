@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/mainstyle.css' %}">
+    <title>입장페이지</title>
+</head>
+
+<body>
+    <img src="{% static 'main/img/main.jpg' %}" alt="main" class="image">
+    <div class="welcome">
+        🌴나의 여름일기
+    </div>
+    
+
+    <!-- 템플릿 언어 if를 사용해서 로그인되어 있을 때와 안되어있을때 화면에 보이는 글 차별화  -->
+    {% if user.is_authenticated %}
+    <div class="login">
+        <a href="account/logout" class="textBlack">LOGOUT</a>
+    </div>
+    {% else %}
+    <div class="login">
+        <a href="account/login" class="textBlack">LOGIN</a>
+    </div>
+    {%endif%}
+    <div class="login">
+    </br></br>
+        <a href="account/mypage" class="textBlack">MYPAGE</a>
+        
+    </div>
+    <div class="copy">
+        copyright 여름이었다 팀
+    </div>
+    {% if user.is_authenticated %}
+    <div style="display: flex; justify-content: center;">
+        <div>    
+        </div>
+    </div>
+    {%endif%}
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'UhBeeRyuga';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeRyuga.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+* {
+    font-family: 'UhBeeRyuga', sans-serif;
+}
+.image {
+    width: 20%;
+    height: 100%;
+    margin: 10% 0% 0% 20%; 
+  }
+.image2 {
+    width: 20%;
+    height: 100%;
+    margin: 10% 0% 0% 15%; 
+  }
+body{
+    background-image: url("head.png");
+    background-repeat: no-repeat; 
+    background-size: cover;  
+}
+.namebox{
+    position: absolute;
+    width: 10%;
+    top: 12%;
+    left: 7%;
+    font-size: 30px;
+}
+.uploadbox{
+    position: absolute;
+    width: 15%;
+    top: 55%;
+    left: 44.2%;
+    font-size: 30px;
+}
+.select1{
+height: 50px;
+font-size: 25px;
+background-color:  white;;
+border-radius: 20px 20px 20px 20px;
+cursor: pointer;
+
+}

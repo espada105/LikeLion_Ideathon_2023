@@ -1,0 +1,43 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'account/css/joinpagestyle.css' %}">
+  <title>회원가입페이지</title>
+</head>
+
+<body>
+  <img src="{% static 'account/img/head.png'%}" alt="main" class="image">
+  <div class="join">
+    회원가입
+  </div>
+  <!-- <form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button>회원가입 신청</button>
+</form> -->
+  <form method="POST" action = "{% url 'signup' %}">
+    {% csrf_token %}
+      <div>
+        <input type="text" class="idbox" name="username" placeholder="회원 아이디 🐬">
+      </div>
+      <div>
+        <input type="password" class="pwbox" name="password1" placeholder="비밀번호 🌊">
+      </div>
+      <div>
+        <input type="password" class="pwbox2" name="password2" placeholder="비밀번호 확인 🐬">
+      </div>
+      <!-- <div>
+        <input type="text" class="nicknamebox" name="nickname" placeholder="사용할 닉네임 🌊">
+      </div> -->
+      <div class="systembox">
+        <button class="joinbox btn btn-primary" type="submit" >JOIN</button>
+      </div>
+  </form>
+</body>
+
+</html>

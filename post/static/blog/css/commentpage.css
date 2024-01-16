@@ -1,0 +1,397 @@
+@font-face {
+    font-family: 'UhBeeRyuga';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeRyuga.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    font-family: 'UhBeeRyuga', sans-serif;
+  }
+  
+  .body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("head.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    flex-direction: row;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .book {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 850px;
+  }
+  
+  .mainbox {
+    width: 100%;
+    height: 1800px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .headerallbox {
+    width: 720px;
+    height: 86px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+
+
+
+
+    
+  }
+  
+  .button {
+    width: 26%;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .share {
+    position: relative;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    background-color:transparent;
+    
+  }
+  
+  .shareButton {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'UhBeeRyuga', sans-serif;
+    font-size: 25px;
+    text-align: center;
+   
+    background-color:transparent;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: none;
+    width: 100%;
+    background-color:transparent;
+  }
+  
+  .dropdownItem {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'UhBeeRyuga', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    border-style: dashed;
+    border-color: rgb(205, 236, 236);
+    background-color: #99eeff;
+    border-radius: 20px 20px 20px 20px;
+  }
+  
+  
+  .shareFacebook {
+    width: 130px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'UhBeeRyuga', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: #ffffff;
+    background-color: #ffffff;
+  }
+  
+  .shareTwitter {
+    width: 130px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'UhBeeRyuga', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: #ffffff;
+    background-color: #ffffff;
+  }
+  
+  .shareKakaoTalk {
+    width: 130px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'UhBeeRyuga', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: #ffffff;
+    background-color: #ffffff;
+  }
+  
+  .itssummer {
+    width: 23%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .date {
+    width: 35%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .date0 {
+    width: 19%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .date1 {
+    width: 75%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    border: #ffffff;
+    background-color: #ffffff;
+  }
+  
+  .weather {
+    width: 18%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .weather0 {
+    width: 45%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+  }
+  
+  .weather1 {
+    width: 60%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    border: #ffffff;
+    background-color: #ffffff;
+  }
+  
+  .left-page {
+    width: 100%px;
+    height: 100%;
+    background-color: #ffffff;
+    border-right: 4px #84b6ebf0;
+    border-left: #ffffff;
+    border-top: #ffffff;
+    border-bottom: #ffffff;
+    border-style: dashed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    padding: 0;
+  }
+  
+  .photo {
+    color: rgb(35, 94, 230);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 80px;
+    background-color: #ddfafef0;
+    width: 715px;
+    height: 65%;
+    border: 6px solid #b9ecf3f0;
+    border-bottom: 1px;
+    border-radius: 20px 20px 20px 20px;
+  }
+  
+  .manuscript {
+    position: relative;
+    width: 684px;
+    height: 50%;
+    border: 6px solid #b9ecf3f0;
+    border-radius: 20px 20px 20px 20px; 
+    font-family: 'UhBeeRyuga', sans-serif;
+    font-size: 35px;
+    padding: 0px;
+    display: flex;
+    align-items: top;
+    background-attachment: local;
+    background-image: linear-gradient(to right, white 10px, transparent 10px),
+      linear-gradient(to left, white 10px, transparent 10px),
+      repeating-linear-gradient(white, white 40px, #ccc 41px, #ccc 41px, white 44px);
+    line-height: 43px;
+    padding: 0px 10px;
+    overflow: auto;
+    text-overflow: clip;
+    white-space:normal;
+  }
+  
+  .right-page {
+    width: 100%;
+    background-color: #ffffff;
+    border-right: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .righthead {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ffffff;
+  }
+  
+  .manuscript2 {
+    position: relative;
+    width: 95%;
+    height: 780px;
+    border: 6px solid #b9ecf3f0;
+    border-radius: 20px 20px 20px 20px;
+    font-family: 'UhBeeRyuga', sans-serif;
+    font-size: 35px;
+    padding: 0px;
+    white-space:normal;
+  }
+  
+
+.comment{
+    width: 1050px;
+    height: 760px;
+    display: flex;
+    
+
+}
+.idbox{
+    width: 1050px;
+    height: 760px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    
+  }
+
+.id{
+    width: 100px;
+    padding: 0px;
+    height: 30px;
+    border:2px solid#99eeff;
+    font-size: 20px;
+    align-items: center;
+    
+    
+}
+
+.usercomment{
+    width: 1050px;
+    padding: 0px;
+    height: 30px;
+    border:2px solid#99eeff;
+    font-size: 20px;
+    
+    
+}
+.idbox1{
+    width: 780px;
+    height: 30px;
+    display: flex;
+    border:2px solid#0e6d80;
+    margin: 3px;
+    
+    
+}
+.commentall{
+    width:980px;
+    height: 70px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comment0{
+    width:620px;
+    height: 30px;
+    border:2px solid #99eeff;
+}
+
+
+
+
+.like{
+  display: flex;
+  justify-content: start;
+  border-color: #99eeff;
+}
+
+.heart-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 34px;
+  color: #ff0000;
+}
+
+.heart-button:hover {
+  color: hsl(0, 65%, 71%);
+  
+}
+
+#count {
+  font-size: 18px;
+  margin-left: 5px;
+}

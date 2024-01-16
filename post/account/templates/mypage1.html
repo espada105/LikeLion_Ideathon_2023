@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'account/css/mypagestyle.css'%} ">
+    <title>마이페이지</title>
+</head>
+<body>
+    <div class="namebox">
+        MYPAGE
+    </div>
+    <div class="write">
+        <a href="{% url 'upload'%}" class="textBlack">일기쓰기</a>
+    </div>
+    <div class="logout">
+        <a href="{% url 'logout' %}">로그아웃</a>
+    </div>
+
+    <div class="post-container">
+    {% for post in posts %}
+        <div class="box1">
+            {% if post.image1 %}
+            <a href="{% url 'detail' post.id %}"><img class="pic1" src="{{ post.image1.url }}">
+            {% else %}
+            <div>사진은 없습니다.</div>
+            {% endif %}
+            <div class="date1">
+                {{post.created_at}}
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+</body>
+</html>

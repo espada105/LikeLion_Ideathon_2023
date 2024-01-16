@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'UhBeeRyuga';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeRyuga.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+* {
+    font-family: 'UhBeeRyuga', sans-serif;
+}
+.image {
+  width: 100%;
+  height: 700px;
+}
+.join{
+  position: absolute;
+  top :25%;
+  left : 44%;
+  font-size: 55px;
+  text-decoration:underline solid black 3px;
+  text-underline-offset: 0em;
+}
+.idbox{
+  position:absolute;
+  width: 300px;
+  height: 50px;
+  background-color: #b9ecf3f0;
+  border: 0px solid #FFD93C; 
+  top: 40%;
+  left: 39%;
+
+  /* 아래는 폰트 ㅎㅎ */
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  /* -webkit-text-stroke: 1px whitesmoke; */
+}
+.pwbox{
+  position:absolute;
+  width: 300px;
+  height: 50px;
+  background-color: #b3c9f4;
+  border: 0px solid #FFD93C;
+  /* border:  1px solid black; */
+  top: 49%;
+  left: 39%;
+
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  /* -webkit-text-stroke: 1px whitesmoke; */
+}
+.pwbox2{
+  position:absolute;
+  width: 300px;
+  height: 50px;
+  background-color: #b3c9f4;
+  border: 0px solid #FFD93C;
+  /* border:  1px solid black; */
+  top: 58%;
+  left: 39%;
+
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  /* -webkit-text-stroke: 1px whitesmoke; */
+}
+.nicknamebox{
+  position:absolute;
+  width: 300px;
+  height: 50px;
+  background-color: #b9ecf3f0;
+  border: 0px solid #FFD93C; 
+  top: 67%;
+  left: 39%;
+
+  /* 아래는 폰트 ㅎㅎ */
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  /* -webkit-text-stroke: 1px whitesmoke; */
+}
+.systembox{
+  position: absolute;
+  display:flex;
+  justify-content: space-between;
+  width: 310px; 
+  height: 50px;
+  /* background-color: black; */
+  top: 76%;
+  left: 39%;
+
+  /*폰트 ㅎㅎ*/
+  text-align: center;
+
+}
+.joinbox{
+  position:absolute;
+  width: 140px; 
+  height: 50px;
+  background-color: #c1cbe4fa;
+  /* border:  1px solid black; */
+  top: 0%;
+  left: 25%;
+
+  font-size: 30px;
+  color: white;
+  -webkit-text-stroke: 1px whitesmoke;
+}
+
+
+
+

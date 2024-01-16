@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'blog/css/uploadstyle.css' %}">
+    <title>사진업로드페이지</title>
+</head>
+<body>
+    <div class="namebox">
+        {{ user.username }}
+    </div>
+    <img src="{% static 'blog/img/네컷 세로1.png' %}" alt="main" class="image">
+    <button class="select1"><a href="{%  url 'insert1' %}">틀 선택</a></button>
+    <img src="{% static 'blog/img/네컷 세로2.png' %}" alt="main" class="image2">
+    <!-- <div class="uploadbox">
+        🍦사진 가져오기🍦
+    </div> -->
+    <button class="select1"><a href="{%  url 'insert2' %}">틀 선택</a></button>
+</body>
+</html>

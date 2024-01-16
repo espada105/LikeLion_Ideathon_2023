@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'blog/css/writing2.css' %}">
+    <script src="{% static 'blog/js/writing2.js'%} "></script>
+    <title>일기쓰기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0" />
+</head>
+
+<body>
+    <!--<img src="./head.png" alt="main" class="image">-->
+    <div class="book">
+        <div class="left-page">
+            
+            <div class="headerallbox">
+                <div class="itssummer">⛱️여름이었다⛱️&nbsp</div> 
+
+                <div class="date">
+                    <div class="date0">날짜 :</div>
+                    <input type="idbox" class = "date1" placeholder = "XXXX년XX월XX일X요일">
+                </div>
+                
+
+                <div class=" weather">
+                    <div class="weather0">날씨 :</div>
+                    <input type="idbox" class = "weather1" placeholder = "맑음">
+                </div>    
+
+                <div class="button">
+                    <div class="save">
+                     <button class = "save1" onclick="showConfirmation()">저장하기 /</button> </div>
+
+                        
+                    <div class="share">
+                        <div class="shareButton">공유하기</div>
+                        <div class="dropdown">
+                            <div class="dropdownItem">
+                                <div><img src="{% static 'blog/img/facebook.png' %}" alt="">&nbspFacebook</div>
+                            </div>
+
+                            <div class="dropdownItem">
+                                <div><img src="{% static 'blog/img/instagram.png' %}" alt="">&nbspinstagram</div>
+                            </div>
+
+                            <div class="dropdownItem">
+                                <div><img src="{% static 'blog/img/kakaotalk.png' %}" alt="">&nbspkakaotalk</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+
+
+            <div class="photo">
+                    <div class="jb-wrap">
+                         <div class="jb-image">
+                                <img class="image" src="{% static 'blog/img/네컷 세로1.png'%}" alt="">
+                            </div>
+                         <div class="buttonbox">
+                            <button class="jb-text1">사진추가</button>
+                            <button class="jb-text2">사진추가</button>
+                            <button class="jb-text3">사진추가</button>
+                            <button class="jb-text4">사진추가</button>
+                            </div>
+                   </div>
+
+            </div>
+            
+
+         </div>
+
+
+        <div class="right-page">
+            <div class="righthead">  
+                <button class="comment"> 댓글보기💭 </button>
+            </div>
+            <div class="manuscript2"  contenteditable="true">
+                홍성인은 2012년에 애쉬를 기점으로 롤을 처음 시작했는데 못해서 롤이 재미없었다. 그래서 로스트사가라는 똥겜을 자주했는데 13살이되면서 자크를 우연히 하게됐는데 이 초록젤리는 홍성인에게 감동을 주었고 그 기점으로 탑 리븐을 하게되었으며 평캔만 주구장창했지만, 황족미드를 가고싶었던 그는 탈론을 열심히 하면서 즐겼다. 그러던 중 LCK에서 CJ Entus Madlife인 매드라이프의 잊지못할 그랩들을 보며 도구를 하겠느라 다짐하고 모든 서폿을 섭렵하며(유미제외) 황금도구의 길을 걷지만 언제부터인가 홍가문의 매라는 사라지고 도구 홍성인만 남게되어 그는 도라에몽임을 무시하며 그저 숟가락인 노진구들을 다르고 달래며 롤을하게된다홍성인은 2012년에 애쉬를 기점으로 롤을 처음 시작했는데 못해서 롤이 재미없었다. 그래서 로스트사가라는 똥겜을 자주했는데 13살이되면서 자크를 우연히 하게됐는데 이 초록젤리는 홍성인에게 감동을 주었고 그 기점으로 탑 리븐을 하게되었으며 평캔만 주구장창했지만, 황족미드를 가고싶었던 그는 탈론을 열심히 하면서 즐겼다. 그러던 중 LCK에서 CJ Entus Madlife인 매드라이프
+            
+            </div>
+            
+                
+                  
+        </div>
+        
+   
+</body>
+</html>

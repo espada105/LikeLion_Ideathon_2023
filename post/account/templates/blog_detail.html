@@ -1,0 +1,109 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'blog/css/writing3.css' %}">
+    <title>일기쓰기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0" />
+</head>
+
+<body>
+    <!-- <img src=".head.png" alt="main" class="image"> -->
+    <div class="book">
+        <div class="left-page">
+
+            <div class="headerallbox">
+                <div class="itssummer">⛱️여름이었다⛱️&nbsp</div>
+
+                <div class="date">
+                    <div class="date0">날짜 :</div>
+                    <input type="idbox" class="date1" placeholder="XXXX년XX월XX일X요일">
+                </div>
+
+
+                <div class=" weather">
+                    <div class="weather0">날씨 :</div>
+                    <input type="idbox" class="weather1" placeholder="맑음">
+                </div>
+
+                <div class="button">
+                    <div class="save">
+                        <div class="save1">저장됨</div>
+                    </div>
+                    <div class="share">
+                        <div class="shareButton">공유하기</div>
+                        <div class="dropdown">
+                            <div class="dropdownItem">
+                                <div><img src="{% static 'blog/img/facebook.png' %}" alt="">&nbspFacebook</div>
+                            </div>
+
+                            <div class="dropdownItem">
+                                <div><img src="{% static 'blog/img/instagram.png' %}" alt="">&nbspinstagram</div>
+                            </div>
+
+                            <div class="dropdownItem">
+                                <div><img src="{% static 'blog/img/kakaotalk.png' %}" alt="">&nbspkakaotalk</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                <div class="photo">
+                    <div class="jb-wrap">
+                         <div class="jb-image">
+                            <img class="image" src="{% static 'blog/img/네컷 세로2.png'%}" alt=""></img>
+                            </div>
+                         <div class="buttonbox">
+                            <img class="jb-text1" src="{{ posts.image1.url}}"></img>
+                            <img class="jb-text2" src="{{ posts.image2.url}}"></img>
+                            <img class="jb-text3" src="{{ posts.image3.url}}"></img>
+                            <img class="jb-text4" src="{{ posts.image4.url}}"></img>
+                        </div>
+                   </div>
+            </div>
+    
+            <div class="right-page">
+                <div class="righthead">
+                    <button class="comment"> 댓글보기💭 </button>
+                </div>
+
+                <!-- <div class="right-page">
+                <div class="righthead">
+
+
+                 
+                    <div class="page-wrapper">
+
+                    </div>
+
+                    <a href="javascript:openPop()">
+                        <div>
+                            <button class="comment">댓글보기💭</button>
+                        </div>
+                    </a>
+                    <div class="popup_layer" id="popup_layer" style="display: none;">
+                        <div class="popup_box">
+                            <div style="height: 10px; width: 375px; float: top;">
+                                <a href="javascript:closePop();"><img src="{% static 'blog/img/kakaotalk.png' %}"
+                                        class="m_header-banner-close" width="30px" height="30px"></a>
+                            </div>
+
+                           
+                            <div class="popup_btn" style="float: bottom; margin-top: 200px;">
+                                <a href="javascript:closePop();">닫기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- body -->
+                <div class="manuscript2" contenteditable="true"> {{ posts.body}} </div>
+
+            </div>
+</body>
+
+</html>

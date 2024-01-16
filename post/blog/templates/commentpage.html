@@ -1,0 +1,185 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'blog/css/commentpage.css' %}">
+    <script src="{% static 'blog/js/commentpage.js' %}"></script>
+    <title>일기쓰기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0" />
+</head>
+
+<body>
+    <!--<img src="./head.png" alt="main" class="image">-->
+    <div class="book">
+        <div class="left-page">
+            
+            <div class="headerallbox">
+                <div class="itssummer">⛱️여름이었다⛱️&nbsp</div> 
+
+                <div class="date">
+                    <div class="date0">날짜 :</div>
+                    <input type="idbox" class = "date1" placeholder = "XXXX년XX월XX일X요일">
+                </div>
+                
+
+                <div class=" weather">
+                    <div class="weather0">날씨 :</div>
+                    <input type="idbox" class = "weather1" placeholder = "맑음">
+                </div>    
+
+                <div class="button">
+                
+                        
+                    <div class="share">
+                        <div class="shareButton">&nbsp&nbsp공유하기</div>
+                        <div class="dropdown">
+                            <div class="dropdownItem">
+                                <div><img src="{% static 'blog/img/facebook.png' %}" alt="">&nbspFacebook</div>
+                            </div>
+
+                            <div class="dropdownItem">
+                                <div><img src="{% static 'blog/img/instagram.png' %}" alt="">&nbspinstagram</div>
+                            </div>
+
+                            <div class="dropdownItem">
+                                <div><img src="{% static 'blog/img/kakaotalk.png' %}" alt="">&nbspkakaotalk</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+
+
+            <button class="photo"> 사진 </button>
+            <div class="manuscript" contenteditable="true">
+            
+            </div>
+        </div>
+
+
+        <div class="right-page">
+            <div class="righthead"></div>
+            <div class="manuscript2">
+                
+                <div class="comment">
+                    
+                <div class="idbox">
+                    <div class="like">
+                        LIKE
+                        <button class="heart-button" onclick="like()">
+                            <span>&#9825;</span>
+                        </button>
+                            <span id="count">0</span>
+                    </div>
+
+
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommentusercommentusercommentusercommentusercomment</div>
+                    </div>
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommenusercommentusercommentusercommentusercomment</div>
+                    </div>
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommenusercommentusercommentusercommentusercomment</div>
+                    </div>
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommenusercommentusercommentusercommentusercomment</div>
+                    </div>
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommenusercommentusercommentusercommentusercomment</div>
+                    </div>
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommenusercommentusercommentusercommentusercomment</div>
+                    </div>
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommenusercommentusercommentusercommentusercomment</div>
+                    </div>
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommenusercommentusercommentusercommentusercomment</div>
+                    </div>
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommenusercommentusercommentusercommentusercomment</div>
+                    </div>
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommenusercommentusercommentusercommentusercomment</div>
+                    </div>
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommenusercommentusercommentusercommentusercomment</div>
+                    </div>
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommenusercommentusercommentusercommentusercomment</div>
+                    </div>
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommenusercommentusercommentusercommentusercomment</div>
+                    </div>
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommenu1sercommentusercommentusercommentusercomment</div>
+                    </div>
+                    
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommenusercommentusercommentusercommentusercomment</div>
+                    </div>
+                    <div class="idbox1">
+                        <div class="id"> 
+                            <div><img src="{% static 'blog/img/unknown.png' %}" alt="">id</div></div>
+                        <div class="usercomment">usercommenusercommentusercommentusercommentusercomment</div>
+                    </div>
+                    
+                    
+
+                
+                <div class="commentall">
+                    <input class = "comment0" type="text" id="comment-input" placeholder="댓글을 입력하세요">
+                        
+                    <button class ="comment1" onclick="addComment()">댓글 추가</button>
+                    
+                    <ul id="comment-list"> <!-- 여기에 댓글이 동적으로 추가될 것입니다 -->
+                    </ul>
+                </div>
+                </div>
+                </div>
+        </div>
+                <!-- <script src="{% static '' %}script.js"></script> -->
+            
+            </div>
+            
+                
+        </div>
+        
+    
+</body>
+</html>
